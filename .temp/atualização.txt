@@ -1,0 +1,55 @@
+durante a instalação o composer sugeriu a subistituição de alguns pacotes que foram abandonados 
+
+O Composer está instalando as dependências do projeto Laravel, e durante esse processo, 
+ele encontrou algumas sugestões e mensagens de aviso sobre pacotes abandonados. 
+Vamos abordar essas mensagens:
+
+1 - Package suggestions (sugestões de pacotes): O Composer pode sugerir pacotes adicionais com base nas dependências instaladas. 
+Se você estiver interessado nessas sugestões, 
+pode usar o comando composer suggest para ver detalhes sobre eles.
+
+2 - Pacotes abandonados: O Composer alertou sobre alguns pacotes que estão abandonados. 
+Isso significa que os desenvolvedores do pacote não estão mais mantendo ou atualizando-o e pode haver alternativas recomendadas. 
+Aqui estão as recomendações para os pacotes abandonados mencionados:
+
+	swiftmailer/swiftmailer: Use symfony/mailer em vez disso.
+
+	como instalar symfony/mailer
+	>> composer require symfony/mailer
+
+		Este comando instrui o Composer a adicionar o pacote symfony/mailer ao seu projeto e instalar todas as suas dependências. 
+		O Composer fará o download do pacote e configurará tudo para você.
+
+		Depois de instalar o Symfony Mailer, você poderá utilizá-lo em seu projeto Laravel para enviar e-mails. 
+		Certifique-se de revisar a documentação oficial do Symfony Mailer para aprender como configurá-lo e utilizá-lo em seu projeto
+
+		>> https://symfony.com/doc/4.x/reference/configuration/swiftmailer.html
+		>> https://symfony.com/doc/current/mailer.html
+
+
+	symfony/debug: Use symfony/error-handler em vez disso.
+
+	Para instalar o Symfony Error Handler, você pode seguir o mesmo procedimento usando o Composer, 
+	assim como fizemos para o Symfony Mailer. 
+	Eis como você pode instalar o Symfony Error Handler:
+	>> composer require symfony/error-handler
+	
+		Este comando adicionará o pacote symfony/error-handler ao seu projeto e instalará todas as suas dependências. 
+		O Symfony Error Handler é uma ferramenta útil para gerenciar erros e exceções em suas aplicações PHP, 
+		oferecendo uma maneira robusta de lidar com problemas de forma estruturada.
+
+
+		Após a instalação, você pode começar a utilizar o Symfony Error Handler em seu projeto Laravel. 
+		Certifique-se de revisar a documentação oficial do Symfony Error Handler para aprender 
+		como configurá-lo e utilizá-lo de forma eficaz
+		>> https://symfony.com/doc/current/controller/error_pages.html
+
+
+	fzaninotto/faker: Não há uma recomendação direta de substituição neste caso. 
+	Você pode continuar usando o fzaninotto/faker, mas esteja ciente de que ele está abandonado.
+
+	phpunit/php-token-stream: Não há uma recomendação direta de substituição. 
+	Você pode continuar usando o phpunit/php-token-stream, mas esteja ciente de que ele está abandonado.
+
+É sempre uma boa prática ficar atento a esses avisos e procurar por alternativas mais atualizadas e ativamente mantidas sempre que possível, 
+para garantir a estabilidade e segurança do seu projeto.
